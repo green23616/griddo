@@ -1,0 +1,5 @@
+{
+  "name": "GridDo",
+  "description": "A simple grid-based todo app inspired by iOS folders and calendar layouts.",
+  "requestFramePermissions": []
+}
