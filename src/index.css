@@ -5,11 +5,34 @@
   --font-mono: "Space Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
+:root {
+  --bg-main: #F1F0E1;
+  --text-main: #101015;
+  --bg-panel: #FFFFFF;
+  --bg-panel-hover: #EAE9DF;
+  --border-color: rgba(16, 16, 21, 0.1);
+  --border-color-strong: rgba(16, 16, 21, 0.2);
+  --accent-muted: #506385;
+  --overlay-bg: rgba(241, 240, 225, 0.8);
+}
+
+.dark {
+  --bg-main: #101015;
+  --text-main: #F1F0E1;
+  --bg-panel: #1a1a1f;
+  --bg-panel-hover: #222228;
+  --border-color: rgba(255, 255, 255, 0.05);
+  --border-color-strong: rgba(255, 255, 255, 0.1);
+  --accent-muted: #506385;
+  --overlay-bg: rgba(16, 16, 21, 0.8);
+}
+
 body {
-  background-color: #101015;
-  color: #F1F0E1;
+  background-color: var(--bg-main);
+  color: var(--text-main);
   font-family: var(--font-mono);
   overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
